@@ -6,6 +6,16 @@ public class ArCondicionado extends DispositivoInteligente {
         this.temperatura = 25;
     }
     
+    public void ligarAr() {
+        setEstado(true);
+        System.out.println(getDispositivo() + " ligado.");
+    }
+    
+    public void desligarAr() {
+        setEstado(false);
+        System.out.println(getDispositivo() + " desligado.");
+    }
+    
     public int getTemperatura() {
         return temperatura;
     }
